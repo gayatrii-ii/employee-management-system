@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  color: #fff;}
+
+
+
+body {
+  background-color: #111;
+}
+##tasklist {
+  /* For Chrome, Safari, and newer versions of Edge */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For Firefox */
+  scrollbar-width: none;
+
+  /* For Internet Explorer and older Edge */
+  -ms-overflow-style: none;
+  
+  /* Ensure the container is actually allowed to scroll */
+  overflow-y: scroll; 
+}
